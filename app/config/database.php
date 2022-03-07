@@ -48,9 +48,9 @@ $active_group = 'local';
 $active_record = TRUE;
 
 $db['local']['hostname'] = 'localhost';
-$db['local']['username'] = 'soft_mainframe';
-$db['local']['password'] = 'soft_mainframe';
-$db['local']['database'] = 'soft_mainframe';
+$db['local']['username'] = 'root';
+$db['local']['password'] = 'Howdy,you,are,alive2020%';
+$db['local']['database'] = 'codeigniter_mainframework';
 $db['local']['dbdriver'] = 'mysqli';
 $db['local']['dbprefix'] = '';
 $db['local']['pconnect'] = TRUE;

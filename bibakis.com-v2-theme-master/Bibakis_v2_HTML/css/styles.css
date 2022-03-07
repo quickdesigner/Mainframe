@@ -1,0 +1,217 @@
+/* FONTS */
+/* open-sans-300 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+	font-display: swap;
+  src: local('Open Sans Light'), local('OpenSans-Light'),
+       url('../fonts/open-sans-v17-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/open-sans-v17-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* open-sans-regular - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+	font-display: swap;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'),
+       url('../fonts/open-sans-v17-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/open-sans-v17-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* open-sans-600 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+	font-display: swap;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'),
+       url('../fonts/open-sans-v17-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/open-sans-v17-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* open-sans-700 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+	font-display: swap;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'),
+       url('../fonts/open-sans-v17-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/open-sans-v17-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* open-sans-800 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+	font-display: swap;
+  src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'),
+       url('../fonts/open-sans-v17-latin-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/open-sans-v17-latin-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* Basic stuff */
+body {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.8em;
+}
+
+
+/* MAIN BAR */
+#main_bar {
+  background-color: #166A9F;
+  color: #ffffff;
+  height: 60px;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  z-index: 2;
+}
+
+#main_bar_logo a, #main_bar_logo a:hover {
+  display: block;
+  font-size: 36px;
+  color: #ffffff;
+  font-weight: 300;
+  text-decoration: none;
+  padding-top: 12px;
+}
+
+#main_bar_logo a span#logo_small {
+  font-size: 18px;
+}
+
+#main_bar_menu_toggle a {
+  display: block;
+  float: right;
+  background-color: #ffffff;
+  color: #166A9F;
+  font-size: 18px;
+  margin: -2.5em 0 0 0;
+  border-radius: 4px;
+  padding: 3px 1em 3px 2.6em;
+  background-image: url('../images/menu.svg');
+  background-repeat: no-repeat;
+  background-position: 12px 9px;
+}
+
+#main_bar_menu_toggle a:hover {
+	text-decoration: none;
+}
+
+#main_menu_desktop {
+	display: none;
+}
+
+#mobile_menu_container {
+	width: 100%;
+	height: 0%;
+	background: linear-gradient(to bottom, #9f1689 0%,#166a9f 80%);
+	z-index: 1;
+	text-align: right;
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow-y: hidden;
+  transition: 0.5s;
+}
+
+#mobile_menu {
+	position: relative;
+	top: 0;
+	width: 100%;
+	text-align: right;
+	margin-top: 40px;
+}
+
+#mobile_menu a {
+	color: #ffffff;
+	font-weight: 300;
+	font-size: 2.2em;
+	display: block;
+	padding: 30px 40px 30px 40px;
+}
+
+#mobile_menu a:hover {
+	text-decoration: none;
+}
+
+#mobile_menu_close {
+	position: relative;
+	top: 0px;
+	right: 40px;
+}
+
+/* VARIOUS */
+.container.content {
+	margin-top: 3em;
+}
+
+.post {
+	margin-bottom: 3em;
+	padding-bottom: 3em;
+}
+
+.post_details {
+	font-size: 0.7em;
+	border-bottom: 1px solid #DFE9EC;
+	padding-bottom: 0.2em;
+	margin-bottom: 1em;
+	color: #aaa;
+}
+
+.post_details a {
+	color: #333;
+}
+
+.post h2.post_title {
+	font-size: 2em;
+	margin-bottom:0.5em;
+	color: #166A9F;
+}
+
+
+/* desktop */
+@media (min-width: 992px) {
+	body {
+	  font-size: 22px;
+	}
+
+	#main_bar_logo a, #main_bar_logo a:hover {
+		padding-top: 10px;
+	}
+
+	#main_bar {
+	  background-color: #166A9F;
+	  color: #ffffff;
+	  height: 60px;
+	  position: fixed;
+	  top: 0px;
+	  width: 100%;
+	  z-index: 2;
+	}
+
+	#main_bar_menu_toggle {
+		display: none;
+	}
+
+	#main_menu_desktop {
+		display: block;
+	  float: right;
+	  color: #ffffff;
+	  font-size: 18px;
+	  margin: -2.6em 0 0 0;
+	}
+
+	#main_menu_desktop a {
+		color: #ffffff;
+		margin: 0 0 0 2em;
+		font-weight: 300;
+		font-size: 1.2em;
+	}
+
+	.container.content {
+		margin-top: 6em;
+	}
+}

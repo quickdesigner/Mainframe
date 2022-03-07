@@ -1,5 +1,5 @@
 <div id="container">
-	<h1>Welcome to <a href="https://github.com/bibakis/Mainframe">MainframePHP</a></h1>
+	<h1>Welcome to <a href="">MainframePHP</a></h1>
 
 	<div id="body">
 		<p>This is the demo application using the <em>demo</em> theme. <br>
@@ -7,6 +7,13 @@
 		<br>
 		<ul class="main_menu">
 			<li><a href="https://github.com/bibakis/Mainframe">View source code on GitHub</a></li>
+			<li><a href="/demo_plugin">demo_plugin</a></li>
+			<li><a href="/user/login">Login</a></li>
+			<li><a href="/demo_plugin">demo_plugin</a></li>
+			<li><a href="/docs/codeigniter/">Codeigniter Documentation</a></li>
+			<li><a href="/docs/mainframe/">Codeigniter Mainframe</a></li>
+			<li><a href="/themes/info.php">Server and PHP info</a></li>
+			
 			<li>Documentation is on it's way</li>
 		</ul>
 		
